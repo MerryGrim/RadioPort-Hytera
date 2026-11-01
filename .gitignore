@@ -1,0 +1,28 @@
+# Release-channel repository: only explicitly reviewed public documentation is tracked.
+*
+!/.gitignore
+!/README.md
+!/DISTRIBUTION-NOTICE.md
+!/THIRD-PARTY-NOTICES.md
+!/LICENSES/
+!/LICENSES/*
+
+# Defense in depth: owner files and signing material never belong in this repository.
+private/
+signing/
+diagnostics/
+project/
+src/
+fixtures/
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.key
+*.password
+*.apk
+*.bin
+*.rcdb
+*.rcdx
+*.zip
+update.json
